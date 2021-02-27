@@ -13,7 +13,29 @@ def createSong(request):
         form = SongForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/')
+            return redirect('/musiconi')
 
     context = {'form':form}
     return render(request,'musiconi/song_form.html', context)
+
+def updateSong(request, pk):
+
+    song = Song.objects.get(id=pk)
+    form = SongForm(instance=song)
+    
+    if request.method == 'POST':
+        form = SongForm(request.POST, instance=song)
+        if form.is_valid():
+            form.save()
+            return redirect('/musiconi')
+
+    context = {'form':form}
+    return render(request,'musiconi/song_form.html', context)
+
+def deleteSong(request,pk):
+    song = Song.objects.get(id=pk)
+    if request.method == 'POST':
+        song.delete()
+        return redirect('/musiconi')
+    context = {'item':song}
+    return render(request,'musiconi/delete.html', context)

@@ -9,9 +9,11 @@
         <article>
             <h2>{{ song.title }}</h2>
             <p> written by {{ song.artist }}</p>
+            <a href="{% url 'musiconi:update_song' song.id %}">Update Song</a>
+            <a href="{% url 'musiconi:delete_song' song.id %}">Delete Song</a>
         </article> 
     {% endfor %}
-    <a href="{% url 'musiconi:create_song' %}">Nova Musica</a>
+    <a href="{% url 'musiconi:create_song' %}">New Song</a>
 
  
 

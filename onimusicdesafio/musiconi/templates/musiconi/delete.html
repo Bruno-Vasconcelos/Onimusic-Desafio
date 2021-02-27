@@ -1,0 +1,10 @@
+{% extends "musiconi/base.html" %}
+
+{% block content %} 
+<p>Are you sure you want to delete '{{item}}'?</p>
+<form action="{% url 'musiconi:delete_song' item.id %}" method="POST">
+    {% csrf_token %}
+    <a href="{% url 'musiconi:  list' %}">Cancel</a>
+    <input type="submit" name="Confirm">
+</form>
+{% endblock %}
