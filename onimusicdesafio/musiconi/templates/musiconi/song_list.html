@@ -1,0 +1,18 @@
+{% extends "musiconi/base.html" %}
+
+{% block title %} MusicOni {% endblock %}
+
+
+{% block content %} 
+
+    {% for song in song_list %}
+        <article>
+            <h2>{{ song.title }}</h2>
+            <p> written by {{ song.artist }}</p>
+        </article> 
+    {% endfor %}
+    <a href="{% url 'musiconi:create_song' %}">Nova Musica</a>
+
+ 
+
+{% endblock %}
