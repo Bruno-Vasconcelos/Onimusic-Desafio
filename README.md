@@ -22,4 +22,27 @@
 - Inicie o servidor com o comando ```python manage.py runserver``` e pegue o link do localhost.
 
 ### Execução
+- primeiro acessando o endereço + /admin, temos acesso a criação de artistas atravez so superusuario.
+
+ ![alt text](/onimusicdesafio/musiconi/images/admin_artist.png)
+ 
+ - Esta é a tela inicial acessando apenas o ip fornecido pelo comando.
+
+ ![alt text](/onimusicdesafio/musiconi/images/home_screen.png)
+ 
+  - clicando em "Add New Song" temos acesso ao formulario para adicionar novas musicas.
+
+ ![alt text](/onimusicdesafio/musiconi/images/create_form.png)
+ 
+  - clicando em "Update" temos acesso a um formulario preenchido com a musica escolhida
+
+ ![alt text](/onimusicdesafio/musiconi/images/update_form.png)
+ 
+  - clicando em "Delete" temos acesso a uma pagina para ter certeza se a ação vai ser tomada
+
+ ![alt text](/onimusicdesafio/musiconi/images/delete_screen.png)
+
+
+
+
 
