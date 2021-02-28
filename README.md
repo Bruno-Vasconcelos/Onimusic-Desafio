@@ -15,10 +15,11 @@
 
 ### Preparação e Instalação
 
-- No terminal inicie um ambiente virtual atravez do comando "virtualenv venv" seguido de "source venv/bin/activate".
+- No terminal inicie um ambiente virtual atravez do comando ```virtualenv venv``` seguido de ```source venv/bin/activate```.
 - Instale o Django atravez do "comando pip install django".
-- Para criar o banco de dados insira o comando ```python manage.py makemigrations``` e depois "python manage.py migrate".
-- Para ter acesso ao Admin é preciso criar um superusuario com o comando "python manage.py createsuperuser".
-- Inicie o servidor com o comando "python manage.py runserver" e pegue o link do localhost.
+- Para criar o banco de dados insira o comando ```python manage.py makemigrations``` e depois ```python manage.py migrate```.
+- Para ter acesso ao Admin é preciso criar um superusuario com o comando ```python manage.py createsuperuser```.
+- Inicie o servidor com o comando ```python manage.py runserver``` e pegue o link do localhost.
 
 ### Execução
+
