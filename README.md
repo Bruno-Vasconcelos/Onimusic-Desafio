@@ -4,7 +4,7 @@
 ## Sobre o projeto
 
  #### Criação de um sistema CRUD de aplicação web para a empresa ficticia MusicOni
- Nessa aplicação é possivel adicionar artistas, e em seguida asicionar musicas, dessesdeterminados artistas, a musica conta com infomações sobre o titulo, duração contabilizada em segundos,se ela foi publicada no Spoity, ou no Youtube e  o Artista que a produziu se ele já estiver no banco de dados, quanto ao artista, só pode ser adicionado pela interface do Admin e conta com as informações de nome e data que se juntou a empresa.
+ Nessa aplicação é possivel adicionar artistas, e em seguida asicionar musicas, dessesdeterminados artistas, a musica conta com infomações sobre o titulo, duração contabilizada em segundos, se ela foi publicada no Spoity, ou no Youtube e  o Artista que a produziu se ele já estiver no banco de dados, quanto ao artista, só pode ser adicionado pela interface do Admin e conta com as informações de nome e data que se juntou a empresa.
 
 ### Tecnologias ultilizadas 
 
