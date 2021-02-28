@@ -11,7 +11,6 @@ class Artist(models.Model):
 
 
 
-
 class Song(models.Model):
     title = models.CharField(max_length=50)
     duration = models.IntegerField()
@@ -21,5 +20,4 @@ class Song(models.Model):
 
     def __str__(self):
         return self.title
-
 

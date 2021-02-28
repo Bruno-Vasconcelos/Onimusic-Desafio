@@ -11,8 +11,10 @@
             <table class="table table-sm">
                 <tr>
                     <th>Song:</th>
-                    <th>Artist:</th>
-                    <th>Duration:</th>
+                    <th>Artist</th>
+                    <th>Spotify</th>
+                    <th>Youtube</th>
+                    <th>Duration</th>
                     <th>Update</th>
                     <th>Remove</th>
                 </tr>
@@ -20,6 +22,8 @@
                 <tr>
                     <td>{{ song.title }}</td>
                     <td>{{ song.artist }}</td>
+                    <td>{{ song.spotify_published}}</td>
+                    <td>{{ song.youtube_published}}</td>
                     <td>{{ song.duration }}</td>
                     <td><a class="btn btn-sm btn-info" href="{% url 'musiconi:update_song' song.id %}">Update</a></td>
                     <td><a class="btn btn-sm btn-danger" href="{% url 'musiconi:delete_song' song.id %}">Delete</a></td>
