@@ -1,11 +1,22 @@
 {% extends "musiconi/base.html" %}
 
-{% block content %} 
+{% load crispy_forms_tags %}
 
-<form action="" method="POST">
-    {%csrf_token %}
-    {{form}}
-    <input type="submit" name="submit">
-</form>
+{% crispy form form.helper %}
 
+{% block content %}
+
+<div class="pt-5 row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="card card-body">
+            <form action="" method="POST">
+                {%csrf_token %}
+                {{ form|crispy }}
+                <input class="btn btn-primary" type="submit" name="submit">
+            </form>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>
 {% endblock %}

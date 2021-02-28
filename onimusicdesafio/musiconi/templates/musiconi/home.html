@@ -1,0 +1,37 @@
+{% extends "musiconi/base.html" %}
+
+{% block title %} Home {% endblock %}
+
+
+{% block content %}
+<div class="pt-5 row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="card card-body">
+            <table class="table table-sm">
+                <tr>
+                    <th>Song:</th>
+                    <th>Artist:</th>
+                    <th>Duration:</th>
+                    <th>Update</th>
+                    <th>Remove</th>
+                </tr>
+                {% for song in songs %}
+                <tr>
+                    <td>{{ song.title }}</td>
+                    <td>{{ song.artist }}</td>
+                    <td>{{ song.duration }}</td>
+                    <td><a class="btn btn-sm btn-info" href="{% url 'musiconi:update_song' song.id %}">Update</a></td>
+                    <td><a class="btn btn-sm btn-danger" href="{% url 'musiconi:delete_song' song.id %}">Delete</a></td>
+                </tr>
+                {% endfor %}
+            </table>
+            <a class="btn btn-primary btn-sm btn-block" href="{% url 'musiconi:create_song' %}">Add New Song</a>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+<p></p>
+
+{% endblock %}
